@@ -13,7 +13,6 @@ String appKey = "XXX"; // Enter your own appKey from TTN
 
 void setup() {
   Serial.begin(115200);
-  while (!Serial);
   if (!modem.begin(EU868)) {
     Serial.println("Failed to start module");
     while (1) {}
@@ -74,11 +73,6 @@ int send(String s) {
   modem.beginPacket();
   modem.print(s);
   err = modem.endPacket(true);
-  if (err > 0) {
-    Serial.println("Message sent correctly!");
-  } else {
-    Serial.println("Error sending message :(");
-  }
   return err;
 }
 
