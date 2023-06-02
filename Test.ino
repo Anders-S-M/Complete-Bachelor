@@ -1,15 +1,6 @@
-/*
-  First Configuration
-  This sketch demonstrates the usage of MKR WAN 1300/1310 LoRa module.
-  This example code is in the public domain.
-*/
-
 #include <MKRWAN.h>
 
 LoRaModem modem;
-
-// Uncomment if using the Murata chip as a module
-// LoRaModem modem(Serial1);
 
 String appEui = "XXX"; //Enter your own appEUI and appKey values here
 String appKey = "XXX";
