@@ -1,5 +1,5 @@
 # Complete-Bachelor
-The bachelor package contains the nodes webcam_pub, camera_node, system_node.
+The bachelor package contains the nodes webcam_pub, camera_node, System_Node.
 
 The dynamixel code package contains the node control_node.
 
